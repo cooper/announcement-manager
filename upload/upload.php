@@ -14,5 +14,5 @@ if (move_uploaded_file($file['tmp_name'], $target_name))
     echo "The file was uploaded successfully.";
 else
     echo "The file failed to upload: {$file['error']}";
-
+echo print_r(error_get_last());
 ?>
