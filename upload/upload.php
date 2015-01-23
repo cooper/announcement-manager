@@ -7,7 +7,7 @@ if (!$_POST || !isset($_FILES['uploadFile']))
 // get file info
 $file        = $_FILES['uploadFile'];
 $file_name   = $file['name'];
-$target_name = basename($file['name']);
+$target_name = '../uploads/'.basename($file['name']);
 
 // move the uploaded file
 if (move_uploaded_file($file['tmp_name'], $target_name))
