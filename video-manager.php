@@ -5,7 +5,7 @@ function get_video_filenames () {
 }
 
 // returns files of a directory with most recent first
-function get_files_in_order ($dir, $ext) {
+function get_files_in_order ($dir, $ext = null) {
     $ignored = array('.', '..', '.git', '.htaccess', 'web.config');
     $files   = array();   
     
@@ -17,7 +17,7 @@ function get_files_in_order ($dir, $ext) {
         
         // extension not allowed
         $file_ext = pathinfo($file, PATHINFO_EXTENSION);
-        if (strlen($ext) && $ext != $file_ext)
+        if (isset($ext) && $ext != $file_ext)
             continue;
         
         // get the modification time
