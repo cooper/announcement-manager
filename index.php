@@ -5,7 +5,7 @@
 */
 
 require_once('video-manager.php');
-print_r(get_files_in_order('uploads'));
+print_r(get_video_filenames());
 
 
 ?>
