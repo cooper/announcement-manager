@@ -9,7 +9,7 @@
 <body>
 
 <form action="upload.php" method="post" enctype="multipart/form-data">
-    Select video to upload:
+    Select video
     <input type="file" name="uploadFile" id="uploadFile" />
     <input type="submit" value="Upload" name="submit" />
 </form>
