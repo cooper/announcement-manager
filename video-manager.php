@@ -1,7 +1,7 @@
 <?php
 
-function get_video_filenames () {
-    return get_files_in_order('uploads', 'MOV');
+function get_video_filenames ($where = 'uploads') {
+    return get_files_in_order($where, 'MOV');
 }
 
 // returns files of a directory with most recent first
